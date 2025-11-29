@@ -1,0 +1,704 @@
+{
+    "mipymes": [
+        {
+            "id": "1",
+            "nombre": "El Sonador",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.029950061733523",
+                "long": "-81.2050843180507"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "nombre": "La Bendecida",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.032676936775648",
+                "long": "-81.20340529447681"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "nombre": "La Cristina",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.044296102133195",
+                "long": "-81.21538406938626"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "Cash",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "nombre": "662",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.034290377883416",
+                "long": "-81.20285470098106"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+53 53521050",
+            "website": false,
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "nombre": "Mercado Ayala",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.04147507990642",
+                "long": "-81.208695395786"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+53 52628299",
+            "website": false,
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "nombre": "La Massiel",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.04355501888712",
+                "long": "-81.21115541177934"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+53 58060932",
+            "website": false,
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "nombre": "Made's Shop",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.04139484499965",
+                "long": "-81.2136421227612"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+53 58207225",
+            "website": false,
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "nombre": "Tommy",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.032715443686655",
+                "long": "-81.21709554986155"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "nombre": "La Familia",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.028517987866532",
+                "long": "-81.21709275724325"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+53 51516767",
+            "website": false,
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "nombre": "Vives & 22",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.044085489894723",
+                "long": "-81.20578475647213"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "nombre": "La Doña",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.04363875373823",
+                "long": "-81.20621390443146"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "nombre": "Renacer",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.03999872212172",
+                "long": "-81.2035120565836"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "nombre": "Vives Shop",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.033747022020727",
+                "long": "-81.20549440705376"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "nombre": "Mercado M&M's",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.03298419903326",
+                "long": "-81.20620641446123"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "nombre": "Vente pa' acá",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.12676470596963",
+                "long": "-81.28811543450529"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "nombre": "Primos Donuts",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.031566376069613",
+                "long": "-81.20350065895842"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "nombre": "El Renacer",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.045956723300574",
+                "long": "-81.20925175109167"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "nombre": "Mercado Sin Pensarlo",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.038844175978507",
+                "long": "-81.21049453274345"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "nombre": "La Piquera",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.042007782302242",
+                "long": "-81.20784620490628"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "20",
+            "nombre": "La Paloma",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.039367973720196",
+                "long": "-81.20588664844885"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "21",
+            "nombre": "The Marivan",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.0274318551415",
+                "long": "-81.21822209674154"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "22",
+            "nombre": "Kiosko Mayoli",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.041184797648622",
+                "long": "-81.21291493295233"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "23",
+            "nombre": "Minerva 313",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.03867566769016",
+                "long": "-81.21048281939503"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "24",
+            "nombre": "Las Bendiciones",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.03859183866933",
+                "long": "-81.21126954216953"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        },
+        {
+            "id": "25",
+            "nombre": "El Animal Nocturno",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.038365755178578",
+                "long": "-81.21154006402907"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "website": false,
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "",
+                    "tipo": "",
+                    "marca": "",
+                    "price": "",
+                    "nacional":true
+                }
+            ]
+        }
+    ]
+}
