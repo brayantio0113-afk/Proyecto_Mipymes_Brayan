@@ -2,7 +2,7 @@
     "mipymes": [
         {
             "id": "1",
-            "nombre": "El Sonador",
+            "nombre": "El Soñador",
             "localizacion": {
                 "provincia": "Matanzas",
                 "municipio": "Cardenas",
@@ -16,15 +16,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "frijoles",
+                    "price": "800"
+                },
+                {
+                    "id": "2",
+                    "tipo": "salchichas",
+                    "price": "255"
+                },
+                {
+                    "id": "3",
+                    "tipo": "pasta de tomate",
+                    "price": "330"
+                },
+                {
+                    "id": "4",
+                    "tipo": "papel higiénico",
+                    "price": "500"
+                },
+                {
+                    "id": "5",
+                    "tipo": "jabón de tocador ",
+                    "price": "140"
+                },
+                {
+                    "id": "6",
+                    "tipo": "sazón",
+                    "price": "1100"
+                },
+                {
+                    "id": "7",
+                    "tipo": "arroz",
+                    "price": "580"
+                },
+                {
+                    "id": "8",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "9",
+                    "tipo": "colonia",
+                    "price": "1800"
+                },
+                {
+                    "id": "10",
+                    "tipo": "sopa instantanea",
+                    "price": "160"
                 }
             ]
         },
@@ -44,15 +86,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "bebida energizante",
+                    "price": "210"
+                },
+                {
+                    "id": "2",
+                    "tipo": "jabón de tocador",
+                    "price": "120"
+                },
+                {
+                    "id": "3",
+                    "tipo": "detergente líquido",
+                    "price": "600"
+                },
+                {
+                    "id": "4",
+                    "tipo": "calditos",
+                    "price": "600"
+                },
+                {
+                    "id": "5",
+                    "tipo": "mayonesa",
+                    "price": "850"
+                },
+                {
+                    "id": "6",
+                    "tipo": "refresco intantáneo",
+                    "price": "780"
+                },
+                {
+                    "id": "7",
+                    "tipo": "salchichas",
+                    "price": "360"
+                },
+                {
+                    "id": "8",
+                    "tipo": "arroz",
+                    "price": "300"
+                },
+                {
+                    "id": "9",
+                    "tipo": "mortadella",
+                    "price": "500"
+                },
+                {
+                    "id": "10",
+                    "tipo": "pasta de tomate",
+                    "price": "370"
                 }
             ]
         },
@@ -72,15 +156,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "sazón",
+                    "price": "1100"
+                },
+                {
+                    "id": "2",
+                    "tipo": "pasta de tomate",
+                    "price": "350"
+                },
+                {
+                    "id": "3",
+                    "tipo": "detergente en polvo",
+                    "price": "380"
+                },
+                {
+                    "id": "4",
+                    "tipo": "comino",
+                    "price": "594"
+                },
+                {
+                    "id": "5",
+                    "tipo": "galletas de soda",
+                    "price": "880"
+                },
+                {
+                    "id": "6",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "7",
+                    "tipo": "pasta dental",
+                    "price": "350"
+                },
+                {
+                    "id": "8",
+                    "tipo": "refresco intantáneo",
+                    "price": "754"
+                },
+                {
+                    "id": "9",
+                    "tipo": "azúcar",
+                    "price": "580"
+                },
+                {
+                    "id": "10",
+                    "tipo": "jabón de tocador ",
+                    "price": "130"
                 }
             ]
         },
@@ -100,15 +226,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "+53 53521050",
-            "website": false,
             "delivery": true,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "galletas de soda",
+                    "price": "920"
+                },
+                {
+                    "id": "2",
+                    "tipo": "leche condensada",
+                    "price": "420"
+                },
+                {
+                    "id": "3",
+                    "tipo": "mayonesa",
+                    "price": "700"
+                },
+                {
+                    "id": "4",
+                    "tipo": "detergente en polvo",
+                    "price": "520"
+                },
+                {
+                    "id": "5",
+                    "tipo": "calditos",
+                    "price": "1200"
+                },
+                {
+                    "id": "6",
+                    "tipo": "sazón",
+                    "price": "1500"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jugo natural",
+                    "price": "155"
+                },
+                {
+                    "id": "8",
+                    "tipo": "pasta de tomate",
+                    "price": "335"
+                },
+                {
+                    "id": "9",
+                    "tipo": "cigarro H.Upman",
+                    "price": "330"
+                },
+                {
+                    "id": "10",
+                    "tipo": "cigarro Popular",
+                    "price": "380"
                 }
             ]
         },
@@ -128,15 +296,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "+53 52628299",
-            "website": false,
             "delivery": true,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "harina",
+                    "price": "660"
+                },
+                {
+                    "id": "2",
+                    "tipo": "café",
+                    "price": "2600"
+                },
+                {
+                    "id": "3",
+                    "tipo": "frijoles",
+                    "price": "650"
+                },
+                {
+                    "id": "4",
+                    "tipo": "spaghetti",
+                    "price": "350"
+                },
+                {
+                    "id": "5",
+                    "tipo": "papel higiénico",
+                    "price": "500"
+                },
+                {
+                    "id": "6",
+                    "tipo": "desodorante",
+                    "price": "650"
+                },
+                {
+                    "id": "7",
+                    "tipo": "detergente líquido",
+                    "price": "700"
+                },
+                {
+                    "id": "8",
+                    "tipo": "jabón de tocador ",
+                    "price": "160"
+                },
+                {
+                    "id": "9",
+                    "tipo": "pan",
+                    "price": "360"
+                },
+                {
+                    "id": "10",
+                    "tipo": "chícharos",
+                    "price": "650"
                 }
             ]
         },
@@ -156,15 +366,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "+53 58060932",
-            "website": false,
             "delivery": true,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "picadillo",
+                    "price": "300"
+                },
+                {
+                    "id": "2",
+                    "tipo": "pollo",
+                    "price": "1500"
+                },
+                {
+                    "id": "3",
+                    "tipo": "arroz",
+                    "price": "580"
+                },
+                {
+                    "id": "4",
+                    "tipo": "salchichas",
+                    "price": "360"
+                },
+                {
+                    "id": "5",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "6",
+                    "tipo": "aceite",
+                    "price": "900"
+                },
+                {
+                    "id": "7",
+                    "tipo": "café",
+                    "price": "1500"
+                },
+                {
+                    "id": "8",
+                    "tipo": "leche en polvo",
+                    "price": "1670"
+                },
+                {
+                    "id": "9",
+                    "tipo": "pasta de tomate",
+                    "price": "400"
+                },
+                {
+                    "id": "10",
+                    "tipo": "cigarro H.Upman",
+                    "price": "450"
                 }
             ]
         },
@@ -184,15 +436,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "+53 58207225",
-            "website": false,
             "delivery": true,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "2",
+                    "tipo": "arroz",
+                    "price": "500"
+                },
+                {
+                    "id": "3",
+                    "tipo": "azúcar",
+                    "price": "600"
+                },
+                {
+                    "id": "4",
+                    "tipo": "frijoles",
+                    "price": "800"
+                },
+                {
+                    "id": "5",
+                    "tipo": "sal",
+                    "price": "250"
+                },
+                {
+                    "id": "6",
+                    "tipo": "salchichas",
+                    "price": "400"
+                },
+                {
+                    "id": "7",
+                    "tipo": "picadillo",
+                    "price": "400"
+                },
+                {
+                    "id": "8",
+                    "tipo": "papel higiénico",
+                    "price": "500"
+                },
+                {
+                    "id": "9",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "10",
+                    "tipo": "aceite",
+                    "price": "990"
                 }
             ]
         },
@@ -212,15 +506,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "550"
+                },
+                {
+                    "id": "2",
+                    "tipo": "frijoles",
+                    "price": "1000"
+                },
+                {
+                    "id": "3",
+                    "tipo": "mayonesa",
+                    "price": "1000"
+                },
+                {
+                    "id": "4",
+                    "tipo": "papel higiénico",
+                    "price": "580"
+                },
+                {
+                    "id": "5",
+                    "tipo": "íntimas",
+                    "price": "900"
+                },
+                {
+                    "id": "6",
+                    "tipo": "jabón de tocador ",
+                    "price": "160"
+                },
+                {
+                    "id": "7",
+                    "tipo": "pasta dental",
+                    "price": "500"
+                },
+                {
+                    "id": "8",
+                    "tipo": "colonia",
+                    "price": "1300"
+                },
+                {
+                    "id": "9",
+                    "tipo": "shampoo",
+                    "price": "2300"
+                },
+                {
+                    "id": "10",
+                    "tipo": "cepillo dental",
+                    "price": "150"
                 }
             ]
         },
@@ -240,15 +576,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "+53 51516767",
-            "website": false,
             "delivery": true,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "papel higiénico",
+                    "price": "550"
+                },
+                {
+                    "id": "2",
+                    "tipo": "desodorante",
+                    "price": "500"
+                },
+                {
+                    "id": "3",
+                    "tipo": "pan",
+                    "price": "350"
+                },
+                {
+                    "id": "4",
+                    "tipo": "pasta de tomate",
+                    "price": "400"
+                },
+                {
+                    "id": "5",
+                    "tipo": "arroz",
+                    "price": "650"
+                },
+                {
+                    "id": "6",
+                    "tipo": "azúcar",
+                    "price": "650"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "8",
+                    "tipo": "detergente en polvo",
+                    "price": "630"
+                },
+                {
+                    "id": "9",
+                    "tipo": "íntimas",
+                    "price": "350"
+                },
+                {
+                    "id": "10",
+                    "tipo": "pasta dental",
+                    "price": "400"
                 }
             ]
         },
@@ -268,15 +646,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "sal",
+                    "price": "150"
+                },
+                {
+                    "id": "2",
+                    "tipo": "leche en polvo",
+                    "price": "1675"
+                },
+                {
+                    "id": "3",
+                    "tipo": "croquetas",
+                    "price": "170"
+                },
+                {
+                    "id": "4",
+                    "tipo": "café",
+                    "price": "1500"
+                },
+                {
+                    "id": "5",
+                    "tipo": "pasta de tomate",
+                    "price": "370"
+                },
+                {
+                    "id": "6",
+                    "tipo": "aceite",
+                    "price": "860"
+                },
+                {
+                    "id": "7",
+                    "tipo": "huevos",
+                    "price": "3000"
+                },
+                {
+                    "id": "8",
+                    "tipo": "azúcar",
+                    "price": "570"
+                },
+                {
+                    "id": "9",
+                    "tipo": "salchichas",
+                    "price": "355"
+                },
+                {
+                    "id": "10",
+                    "tipo": "picadillo",
+                    "price": "280"
                 }
             ]
         },
@@ -296,15 +716,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "arroz",
+                    "price": "540"
+                },
+                {
+                    "id": "2",
+                    "tipo": "pasta de tomate",
+                    "price": "350"
+                },
+                {
+                    "id": "3",
+                    "tipo": "aceite",
+                    "price": "890"
+                },
+                {
+                    "id": "4",
+                    "tipo": "mayonesa",
+                    "price": "1500"
+                },
+                {
+                    "id": "5",
+                    "tipo": "azúcar",
+                    "price": "560"
+                },
+                {
+                    "id": "6",
+                    "tipo": "frijoles",
+                    "price": "770"
+                },
+                {
+                    "id": "7",
+                    "tipo": "leche en polvo",
+                    "price": "850"
+                },
+                {
+                    "id": "8",
+                    "tipo": "picadillo",
+                    "price": "320"
+                },
+                {
+                    "id": "9",
+                    "tipo": "mortadella",
+                    "price": "550"
+                },
+                {
+                    "id": "10",
+                    "tipo": "chorizo",
+                    "price": "550"
                 }
             ]
         },
@@ -324,15 +786,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "350"
+                },
+                {
+                    "id": "2",
+                    "tipo": "arroz",
+                    "price": "580"
+                },
+                {
+                    "id": "3",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "4",
+                    "tipo": "galletas de soda",
+                    "price": "750"
+                },
+                {
+                    "id": "5",
+                    "tipo": "azúcar",
+                    "price": "580"
+                },
+                {
+                    "id": "6",
+                    "tipo": "aceite",
+                    "price": "950"
+                },
+                {
+                    "id": "7",
+                    "tipo": "leche en polvo",
+                    "price": "800"
+                },
+                {
+                    "id": "8",
+                    "tipo": "detergente en polvo",
+                    "price": "500"
+                },
+                {
+                    "id": "9",
+                    "tipo": "coditos",
+                    "price": "300"
+                },
+                {
+                    "id": "10",
+                    "tipo": "jugo natural",
+                    "price": "160"
                 }
             ]
         },
@@ -352,15 +856,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "galletas de soda",
+                    "price": "980"
+                },
+                {
+                    "id": "2",
+                    "tipo": "mayonesa",
+                    "price": "800"
+                },
+                {
+                    "id": "3",
+                    "tipo": "pasta de tomate",
+                    "price": "400"
+                },
+                {
+                    "id": "4",
+                    "tipo": "aceite",
+                    "price": "990"
+                },
+                {
+                    "id": "5",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "6",
+                    "tipo": "azúcar",
+                    "price": "570"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jabón de tocador ",
+                    "price": "130"
+                },
+                {
+                    "id": "8",
+                    "tipo": "detergente en polvo",
+                    "price": "600"
+                },
+                {
+                    "id": "9",
+                    "tipo": "pasta dental",
+                    "price": "550"
+                },
+                {
+                    "id": "10",
+                    "tipo": "leche condensada",
+                    "price": "480"
                 }
             ]
         },
@@ -380,15 +926,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "detergente en polvo",
+                    "price": "600"
+                },
+                {
+                    "id": "2",
+                    "tipo": "azúcar",
+                    "price": "600"
+                },
+                {
+                    "id": "3",
+                    "tipo": "desodorante",
+                    "price": "550"
+                },
+                {
+                    "id": "4",
+                    "tipo": "café",
+                    "price": "1100"
+                },
+                {
+                    "id": "5",
+                    "tipo": "sal",
+                    "price": "200"
+                },
+                {
+                    "id": "6",
+                    "tipo": "frijoles",
+                    "price": "900"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jabón de tocador ",
+                    "price": "170"
+                },
+                {
+                    "id": "8",
+                    "tipo": "aceite",
+                    "price": "990"
+                },
+                {
+                    "id": "9",
+                    "tipo": "arroz",
+                    "price": "590"
+                },
+                {
+                    "id": "10",
+                    "tipo": "mayonesa",
+                    "price": "950"
                 }
             ]
         },
@@ -408,82 +996,68 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "jugo natural",
+                    "price": "180"
+                },
+                {
+                    "id": "2",
+                    "tipo": "azúcar",
+                    "price": "600"
+                },
+                {
+                    "id": "3",
+                    "tipo": "frijoles",
+                    "price": "850"
+                },
+                {
+                    "id": "4",
+                    "tipo": "aceite",
+                    "price": "880"
+                },
+                {
+                    "id": "5",
+                    "tipo": "papel higiénico",
+                    "price": "550"
+                },
+                {
+                    "id": "6",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "7",
+                    "tipo": "sal",
+                    "price": "250"
+                },
+                {
+                    "id": "8",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "9",
+                    "tipo": "toallitas humedas",
+                    "price": "550"
+                },
+                {
+                    "id": "10",
+                    "tipo": "galletas de soda",
+                    "price": "1050"
                 }
             ]
         },
         {
             "id": "16",
-            "nombre": "Primos Donuts",
+            "nombre": "Tu Familia",
             "localizacion": {
                 "provincia": "Matanzas",
                 "municipio": "Cardenas",
-                "lat": "23.031566376069613",
-                "long": "-81.20350065895842"
-            },
-            "moneda y metodos de pago": {
-                "Euro": "None",
-                "USD": "None",
-                "MLC": "Card",
-                "CUP": ["Cash", "Card"]
-            },
-            "telefono": "None",
-            "website": false,
-            "delivery": false,
-            "productos": [
-                {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
-                }
-            ]
-        },
-        {
-            "id": "17",
-            "nombre": "El Renacer",
-            "localizacion": {
-                "provincia": "Matanzas",
-                "municipio": "Cardenas",
-                "lat": "23.045956723300574",
-                "long": "-81.20925175109167"
-            },
-            "moneda y metodos de pago": {
-                "Euro": "None",
-                "USD": "None",
-                "MLC": "Card",
-                "CUP": ["Cash", "Card"]
-            },
-            "telefono": "None",
-            "website": false,
-            "delivery": false,
-            "productos": [
-                {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
-                }
-            ]
-        },
-        {
-            "id": "18",
-            "nombre": "Mercado Sin Pensarlo",
-            "localizacion": {
-                "provincia": "Matanzas",
-                "municipio": "Cardenas",
-                "lat": "23.038844175978507",
-                "long": "-81.21049453274345"
+                "lat": "23.031681400897217",
+                "long": "-81.21821847659022"
             },
             "moneda y metodos de pago": {
                 "Euro": "None",
@@ -492,15 +1066,197 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "atun enlatado",
+                    "price": "650"
+                },
+                {
+                    "id": "2",
+                    "tipo": "vinagre",
+                    "price": "800"
+                },
+                {
+                    "id": "3",
+                    "tipo": "mayonesa",
+                    "price": "750"
+                },
+                {
+                    "id": "4",
+                    "tipo": "salsa de soja",
+                    "price": "600"
+                },
+                {
+                    "id": "5",
+                    "tipo": "frijoles",
+                    "price": "100"
+                },
+                {
+                    "id": "6",
+                    "tipo": "pasta de tomate",
+                    "price": "550"
+                },
+                {
+                    "id": "7",
+                    "tipo": "arroz",
+                    "price": "650"
+                },
+                {
+                    "id": "8",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "9",
+                    "tipo": "puré de papas instantáneo",
+                    "price": "650"
+                },
+                {
+                    "id": "10",
+                    "tipo": "aceite",
+                    "price": "1100"
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "nombre": "Tu Mejor Opción",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.030596201480172",
+                "long": "-81.20416328172797"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "350"
+                },
+                {
+                    "id": "2",
+                    "tipo": "jabón de lavar",
+                    "price": "400"
+                },
+                {
+                    "id": "3",
+                    "tipo": "café",
+                    "price": "1700"
+                },
+                {
+                    "id": "4",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "5",
+                    "tipo": "arroz",
+                    "price": "580"
+                },
+                {
+                    "id": "6",
+                    "tipo": "jabón de tocador ",
+                    "price": "130"
+                },
+                {
+                    "id": "7",
+                    "tipo": "picadillo",
+                    "price": "350"
+                },
+                {
+                    "id": "8",
+                    "tipo": "leche condensada",
+                    "price": "480"
+                },
+                {
+                    "id": "9",
+                    "tipo": "jugo natural",
+                    "price": "150"
+                },
+                {
+                    "id": "10",
+                    "tipo": "galletas de soda",
+                    "price": "1400"
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "nombre": "Esquina K",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.030158697399752",
+                "long": "-81.21980526128063"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "spaghetti",
+                    "price": "235"
+                },
+                {
+                    "id": "2",
+                    "tipo": "huevos",
+                    "price": "2800"
+                },
+                {
+                    "id": "3",
+                    "tipo": "pasta de tomate",
+                    "price": "300"
+                },
+                {
+                    "id": "4",
+                    "tipo": "refresco intantáneo",
+                    "price": "624"
+                },
+                {
+                    "id": "5",
+                    "tipo": "azúcar",
+                    "price": "550"
+                },
+                {
+                    "id": "6",
+                    "tipo": "salchichas",
+                    "price": "355"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jugo natural",
+                    "price": "160"
+                },
+                {
+                    "id": "8",
+                    "tipo": "aceite",
+                    "price": "880"
+                },
+                {
+                    "id": "9",
+                    "tipo": "arroz",
+                    "price": "550"
+                },
+                {
+                    "id": "10",
+                    "tipo": "pasta dental",
+                    "price": "400"
                 }
             ]
         },
@@ -520,15 +1276,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "galletas de soda",
+                    "price": "950"
+                },
+                {
+                    "id": "2",
+                    "tipo": "detergente en polvo",
+                    "price": "400"
+                },
+                {
+                    "id": "3",
+                    "tipo": "azúcar",
+                    "price": "590"
+                },
+                {
+                    "id": "4",
+                    "tipo": "jabón de tocador",
+                    "price": "150"
+                },
+                {
+                    "id": "5",
+                    "tipo": "frijoles",
+                    "price": "850"
+                },
+                {
+                    "id": "6",
+                    "tipo": "mayonesa",
+                    "price": "1500"
+                },
+                {
+                    "id": "7",
+                    "tipo": "aceite",
+                    "price": "890"
+                },
+                {
+                    "id": "8",
+                    "tipo": "arroz",
+                    "price": "600"
+                },
+                {
+                    "id": "9",
+                    "tipo": "coditos",
+                    "price": "330"
+                },
+                {
+                    "id": "10",
+                    "tipo": "desodorante",
+                    "price": "550"
                 }
             ]
         },
@@ -548,15 +1346,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "330"
+                },
+                {
+                    "id": "2",
+                    "tipo": "leche en polvo",
+                    "price": "780"
+                },
+                {
+                    "id": "3",
+                    "tipo": "papel higiénico",
+                    "price": "420"
+                },
+                {
+                    "id": "4",
+                    "tipo": "galletas de soda",
+                    "price": "460"
+                },
+                {
+                    "id": "5",
+                    "tipo": "jugo natural",
+                    "price": "160"
+                },
+                {
+                    "id": "6",
+                    "tipo": "íntimas",
+                    "price": "290"
+                },
+                {
+                    "id": "7",
+                    "tipo": "azúcar",
+                    "price": "560"
+                },
+                {
+                    "id": "8",
+                    "tipo": "spaghetti",
+                    "price": "260"
+                },
+                {
+                    "id": "9",
+                    "tipo": "leche condensada",
+                    "price": "450"
+                },
+                {
+                    "id": "10",
+                    "tipo": "calditos",
+                    "price": "300"
                 }
             ]
         },
@@ -576,15 +1416,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "jugo natural",
+                    "price": "180"
+                },
+                {
+                    "id": "2",
+                    "tipo": "papel higiénico",
+                    "price": "1320"
+                },
+                {
+                    "id": "3",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "4",
+                    "tipo": "arroz",
+                    "price": "550"
+                },
+                {
+                    "id": "5",
+                    "tipo": "leche condensada",
+                    "price": "430"
+                },
+                {
+                    "id": "6",
+                    "tipo": "aceite",
+                    "price": "860"
+                },
+                {
+                    "id": "7",
+                    "tipo": "pasta de tomate",
+                    "price": "320"
+                },
+                {
+                    "id": "8",
+                    "tipo": "frijoles",
+                    "price": "780"
+                },
+                {
+                    "id": "9",
+                    "tipo": "refresco intantáneo",
+                    "price": "750"
+                },
+                {
+                    "id": "10",
+                    "tipo": "calditos",
+                    "price": "240"
                 }
             ]
         },
@@ -604,15 +1486,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "335"
+                },
+                {
+                    "id": "2",
+                    "tipo": "azúcar",
+                    "price": "550"
+                },
+                {
+                    "id": "3",
+                    "tipo": "galletas de soda",
+                    "price": "900"
+                },
+                {
+                    "id": "4",
+                    "tipo": "mayonesa",
+                    "price": "1350"
+                },
+                {
+                    "id": "5",
+                    "tipo": "leche en polvo",
+                    "price": "1800"
+                },
+                {
+                    "id": "6",
+                    "tipo": "leche condensada",
+                    "price": "425"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jugo natural",
+                    "price": "650"
+                },
+                {
+                    "id": "8",
+                    "tipo": "yogurt",
+                    "price": "180"
+                },
+                {
+                    "id": "9",
+                    "tipo": "refresco intantáneo",
+                    "price": "660"
+                },
+                {
+                    "id": "10",
+                    "tipo": "refresco gaseado",
+                    "price": "210"
                 }
             ]
         },
@@ -632,15 +1556,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "vino seco",
+                    "price": "180"
+                },
+                {
+                    "id": "2",
+                    "tipo": "arroz",
+                    "price": "600"
+                },
+                {
+                    "id": "3",
+                    "tipo": "azúcar",
+                    "price": "600"
+                },
+                {
+                    "id": "4",
+                    "tipo": "detergente en polvo",
+                    "price": "550"
+                },
+                {
+                    "id": "5",
+                    "tipo": "coditos",
+                    "price": "350"
+                },
+                {
+                    "id": "6",
+                    "tipo": "jugo natural",
+                    "price": "145"
+                },
+                {
+                    "id": "7",
+                    "tipo": "café",
+                    "price": "2500"
+                },
+                {
+                    "id": "8",
+                    "tipo": "aceite",
+                    "price": "990"
+                },
+                {
+                    "id": "9",
+                    "tipo": "sazón",
+                    "price": "1620"
+                },
+                {
+                    "id": "10",
+                    "tipo": "spaghetti",
+                    "price": "260"
                 }
             ]
         },
@@ -660,15 +1626,57 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "frijoles",
+                    "price": "850"
+                },
+                {
+                    "id": "2",
+                    "tipo": "pasta dental",
+                    "price": "450"
+                },
+                {
+                    "id": "3",
+                    "tipo": "mayonesa",
+                    "price": "800"
+                },
+                {
+                    "id": "4",
+                    "tipo": "spaghetti",
+                    "price": "300"
+                },
+                {
+                    "id": "5",
+                    "tipo": "aceite",
+                    "price": "950"
+                },
+                {
+                    "id": "6",
+                    "tipo": "galletas de soda",
+                    "price": "1100"
+                },
+                {
+                    "id": "7",
+                    "tipo": "desodorante",
+                    "price": "300"
+                },
+                {
+                    "id": "8",
+                    "tipo": "salchichas",
+                    "price": "360"
+                },
+                {
+                    "id": "9",
+                    "tipo": "coditos",
+                    "price": "300"
+                },
+                {
+                    "id": "10",
+                    "tipo": "café",
+                    "price": "1700"
                 }
             ]
         },
@@ -688,15 +1696,407 @@
                 "CUP": ["Cash", "Card"]
             },
             "telefono": "None",
-            "website": false,
             "delivery": false,
             "productos": [
                 {
-                    "id": "",
-                    "tipo": "",
-                    "marca": "",
-                    "price": "",
-                    "nacional":true
+                    "id": "1",
+                    "tipo": "arroz",
+                    "price": "660"
+                },
+                {
+                    "id": "2",
+                    "tipo": "aceite",
+                    "price": "850"
+                },
+                {
+                    "id": "3",
+                    "tipo": "jabón de tocador ",
+                    "price": "160"
+                },
+                {
+                    "id": "4",
+                    "tipo": "galletas de soda",
+                    "price": "1100"
+                },
+                {
+                    "id": "5",
+                    "tipo": "jugo natural",
+                    "price": "200"
+                },
+                {
+                    "id": "6",
+                    "tipo": "pasta de tomate",
+                    "price": "450"
+                },
+                {
+                    "id": "7",
+                    "tipo": "puré de papas instantáneo",
+                    "price": "800"
+                },
+                {
+                    "id": "8",
+                    "tipo": "carne enlatada",
+                    "price": "1220"
+                },
+                {
+                    "id": "9",
+                    "tipo": "mayonesa",
+                    "price": "450"
+                },
+                {
+                    "id": "10",
+                    "tipo": "gelatina",
+                    "price": "300"
+                }
+            ]
+        },
+        {
+            "id": "26",
+            "nombre": "Merca Landa",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.03093242156515",
+                "long": "--81.2201524452181"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "Cash",
+                "USD": ["Cash", "Card"],
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "+5352244125",
+            "delivery": true,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "coditos",
+                    "price": "280"
+                },
+                {
+                    "id": "2",
+                    "tipo": "pasta de tomate",
+                    "price": "370"
+                },
+                {
+                    "id": "3",
+                    "tipo": "huevos",
+                    "price": "2900"
+                },
+                {
+                    "id": "4",
+                    "tipo": "refresco intantáneo",
+                    "price": "720"
+                },
+                {
+                    "id": "5",
+                    "tipo": "spaghetti",
+                    "price": "280"
+                },
+                {
+                    "id": "6",
+                    "tipo": "aceite",
+                    "price": "990"
+                },
+                {
+                    "id": "7",
+                    "tipo": "ajo",
+                    "price": "3250"
+                },
+                {
+                    "id": "8",
+                    "tipo": "frijoles",
+                    "price": "800"
+                },
+                {
+                    "id": "9",
+                    "tipo": "detergente en polvo",
+                    "price": "590"
+                },
+                {
+                    "id": "10",
+                    "tipo": "galletas de soda",
+                    "price": "880"
+                }
+            ]
+        },
+        {
+            "id": "27",
+            "nombre": "M@ybelis",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.041887186617732",
+                "long": "-81.19998852505826"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "Cash",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "2",
+                    "tipo": "comino",
+                    "price": "660"
+                },
+                {
+                    "id": "3",
+                    "tipo": "café",
+                    "price": "750"
+                },
+                {
+                    "id": "4",
+                    "tipo": "desodorante",
+                    "price": "400"
+                },
+                {
+                    "id": "5",
+                    "tipo": "refresco gaseado",
+                    "price": "550"
+                },
+                {
+                    "id": "6",
+                    "tipo": "shampoo",
+                    "price": "650"
+                },
+                {
+                    "id": "7",
+                    "tipo": "colonia",
+                    "price": "1050"
+                },
+                {
+                    "id": "8",
+                    "tipo": "papel higiénico",
+                    "price": "420"
+                },
+                {
+                    "id": "9",
+                    "tipo": "malta",
+                    "price": "230"
+                },
+                {
+                    "id": "10",
+                    "tipo": "sazón",
+                    "price": "1100"
+                }
+            ]
+        },
+        {
+            "id": "28",
+            "nombre": "La Generosa",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.046731398905138",
+                "long": "-81.21465724759949"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "pasta de tomate",
+                    "price": "320"
+                },
+                {
+                    "id": "2",
+                    "tipo": "jugo natural",
+                    "price": "140"
+                },
+                {
+                    "id": "3",
+                    "tipo": "café",
+                    "price": "1700"
+                },
+                {
+                    "id": "4",
+                    "tipo": "mantequilla",
+                    "price": "380"
+                },
+                {
+                    "id": "5",
+                    "tipo": "shampoo",
+                    "price": "1250"
+                },
+                {
+                    "id": "6",
+                    "tipo": "jabón de lavar",
+                    "price": "300"
+                },
+                {
+                    "id": "7",
+                    "tipo": "detergente en polvo",
+                    "price": "630"
+                },
+                {
+                    "id": "8",
+                    "tipo": "desodorante",
+                    "price": "480"
+                },
+                {
+                    "id": "9",
+                    "tipo": "pasta dental",
+                    "price": "450"
+                },
+                {
+                    "id": "10",
+                    "tipo": "jabón de tocador ",
+                    "price": "200"
+                }
+            ]
+        },
+        {
+            "id": "29",
+            "nombre": "El Talisman",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.045132510750133",
+                "long": "-81.21393312966948"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "café",
+                    "price": "1500"
+                },
+                {
+                    "id": "2",
+                    "tipo": "aceite",
+                    "price": "980"
+                },
+                {
+                    "id": "3",
+                    "tipo": "pasta de tomate",
+                    "price": "480"
+                },
+                {
+                    "id": "4",
+                    "tipo": "azúcar",
+                    "price": "700"
+                },
+                {
+                    "id": "5",
+                    "tipo": "arroz",
+                    "price": "700"
+                },
+                {
+                    "id": "6",
+                    "tipo": "detergente en polvo",
+                    "price": "380"
+                },
+                {
+                    "id": "7",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "8",
+                    "tipo": "desodorante",
+                    "price": "500"
+                },
+                {
+                    "id": "9",
+                    "tipo": "sal",
+                    "price": "250"
+                },
+                {
+                    "id": "10",
+                    "tipo": "papel higiénico",
+                    "price": "550"
+                }
+            ]
+        },
+        {
+            "id": "30",
+            "nombre": "La Boloñesa",
+            "localizacion": {
+                "provincia": "Matanzas",
+                "municipio": "Cardenas",
+                "lat": "23.04637324946619",
+                "long": "-81.20950831068303"
+            },
+            "moneda y metodos de pago": {
+                "Euro": "None",
+                "USD": "None",
+                "MLC": "Card",
+                "CUP": ["Cash", "Card"]
+            },
+            "telefono": "None",
+            "delivery": false,
+            "productos": [
+                {
+                    "id": "1",
+                    "tipo": "aceite",
+                    "price": "950"
+                },
+                {
+                    "id": "2",
+                    "tipo": "íntimas",
+                    "price": "450"
+                },
+                {
+                    "id": "3",
+                    "tipo": "café",
+                    "price": "1500"
+                },
+                {
+                    "id": "4",
+                    "tipo": "jugo natural",
+                    "price": "170"
+                },
+                {
+                    "id": "5",
+                    "tipo": "jabón de tocador ",
+                    "price": "150"
+                },
+                {
+                    "id": "6",
+                    "tipo": "pasta de tomate",
+                    "price": "500"
+                },
+                {
+                    "id": "7",
+                    "tipo": "azúcar",
+                    "price": "650"
+                },
+                {
+                    "id": "8",
+                    "tipo": "detergente en polvo",
+                    "price": "600"
+                },
+                {
+                    "id": "9",
+                    "tipo": "papel higiénico",
+                    "price": "550"
+                },
+                {
+                    "id": "10",
+                    "tipo": "desodorante",
+                    "price": "650"
                 }
             ]
         }
