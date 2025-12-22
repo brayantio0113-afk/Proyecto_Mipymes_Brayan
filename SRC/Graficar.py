@@ -56,3 +56,60 @@ def graf_cant_prod():
     for pr, ca in zip(productos_pos, cantidad): #TRAZA LINEAS DESDE EL FINAL DE CADA BARRA HASTA EL EJE X
         plt.vlines(x=ca, ymin=pr - 60, ymax=pr + 0.3, color="red", linestyles="--", linewidth=1)
     return (plt.show())
+
+#GRÁFICA QUE MUESTRA LA COMPARATIVA DE LA VARIACION DE LOS PRECIOS DEL USD Y EURO EN EL TOQUE
+def graf_pl_ElToque():
+    price_usd=Functions.usd()
+    price_euro=Functions.euro()
+    price_mlc=Functions.mlc()
+    fechas=Functions.id_eltoque()
+    plt.figure(figsize=(15,15),
+            facecolor=("#f7f4ef"))
+    plt.plot(fechas, price_euro,
+            marker=".",
+            color="blue")
+    plt.plot(fechas, price_usd,
+            marker=".",
+            color="green")
+    plt.xlim (0,62)
+    leyenda=plt.legend(["Euro", "USD"],
+                title="MONEDAS",
+                title_fontsize=15,
+                prop={"family":"algerian", 
+                    "size":15},)
+    plt.title("COMPARACIÓN DE LA VARIACIÓN DE LOS PRECIOS DEL USD Y EL EURO POR ELTOQUE",
+            fontname="algerian",
+            fontsize=20)
+    plt.setp(leyenda.get_title(), fontfamily='algerian', fontsize=16, fontweight='bold')
+    plt.ylim(400, 550)
+    plt.xticks(fechas,
+            fontsize=8)
+    plt.xlabel("DIAS DE ANÁLISIS",
+            fontname="algerian",
+            fontsize=20)
+    plt.ylabel("PRECIOS EN CUP",
+            fontname="algerian",
+            fontsize=20)
+    for i, k in zip(price_euro,fechas ):
+            plt.vlines(x=k, ymin=i - 200, ymax=i - 1, color="red", linestyles="--", linewidth=0.5)
+    return(plt.show())
+
+#GRAFICA DE BARRAS DOBLES QUE COMPARA LOS PRECIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE
+def graf_bar_comp_usd_ac():
+    usd_et_nov=Functions.prom_nov_et(Functions.usd())
+    usd_et_oct=Functions.prom_oct_et(Functions.usd())
+    ac_nov=Functions.prom_ac_grup_nov()
+    ac_oct=Functions.prom_ac_grup_oct()
+    plt.bar(0.9, ac_oct, width=0.30, color="blue", edgecolor="black")
+    plt.bar(0.6, ac_nov, width=0.30, color="red", edgecolor="black")
+    plt.bar(0.15, usd_et_oct, width=0.30, color="blue", edgecolor="black")
+    plt.bar(-0.15, usd_et_nov, width=0.30, color="red", edgecolor="black")
+    plt.legend(["NOVIEMBRE", "OCTUBRE"], fontsize=15)
+    plt.xticks([0,0.75], ["USD", "ACEITE"], fontname="algerian", fontsize=20)
+    plt.text(0.9, ac_oct, ac_oct, ha="center", va="bottom", fontweight="bold")
+    plt.text(0.6, ac_nov, ac_nov, ha="center", va="bottom", fontweight="bold")
+    plt.text(0.15, usd_et_oct, usd_et_oct, ha="center", va="bottom", fontweight="bold")
+    plt.text(-0.15, usd_et_nov, usd_et_nov, ha="center", va="bottom", fontweight="bold")
+    plt.yticks(fontname="algerian", fontsize=15)
+    plt.title("COMPARACIÓN DE LOS PROMEDIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE", fontname="algerian", fontsize=20)
+    return (plt.show())
