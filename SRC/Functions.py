@@ -91,19 +91,19 @@ def met_pago():
 #PROMEDIO (INT) DE LAS MONEDAS DE ELTOQUE EN EL MES DE OCTUBRE (LA FUNCION SIRVE PARA LAS 3 MONEDAS)
 def prom_oct_et(moneda):
     promedio=0
-    for i in moneda()[0:31]:
+    for i in moneda[0:31]:
         promedio+=i
     return(promedio//31)
 
 #PROMEDIO (INT) DE LAS MONEDAS DE ELTOQUE EN EL MES DE NOVIEMBRE (LA FUNCION SIRVE PARA LAS 3 MONEDAS)
 def prom_nov_et(moneda):
     promedio=0
-    for i in moneda()[31:61]:
+    for i in moneda[31:61]:
         promedio+=i
     return(promedio//30)
 
 #PROMEDIO (INT) DE LOS PRECIOS DEL ACEITE EN GRUPOS Y REVOLICO EN EL MES DE OCTUBRE
-def prom_grup_oct():
+def prom_ac_grup_oct():
     c=-1
     promedio=0
     gr=op("Grupos")["Grupos_Revolico_aceite_1lt"]["Precios"][0]["Octubre"]
@@ -113,7 +113,7 @@ def prom_grup_oct():
     return(promedio//30)
 
 #PROMEDIO (INT) DE LOS PRECIOS DEL ACEITE EN GRUPOS Y REVOLICO EN EL MES DE NOVIEMBRE
-def prom_grup_nov():
+def prom_ac_grup_nov():
     c=-1
     promedio=0
     gr=op("Grupos")["Grupos_Revolico_aceite_1lt"]["Precios"][1]["Noviembre"]
