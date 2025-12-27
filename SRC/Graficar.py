@@ -113,3 +113,20 @@ def graf_bar_comp_usd_ac():
     plt.yticks(fontname="algerian", fontsize=15)
     plt.title("COMPARACIÓN DE LOS PROMEDIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE", fontname="algerian", fontsize=20)
     return (plt.show())
+
+#GRAFICA QUE MMUESTRA LAS MIPYMES EN LAS QUE SE PUEDE COMPRAR UNA UNIDAD DE CADA UNO DE LOS 10 PRODUCTOS ANALIZADOS CON EL SALARIO BASICO (5849cup)
+def graf_scatt_alc_sal():
+    mipymes=Functions.nombres_mp()
+    alcanza=Functions.alc_salario_list()
+    plt.figure(figsize=(15,15), facecolor="#f7f4ef")
+    plt.scatter(alcanza, mipymes, s=80, color="#910404", facecolor="#5500FF")
+    plt.xticks([0, 1], ["No", "Sí"],
+                fontname="algerian",
+                fontsize=20)
+    plt.yticks(fontname="algerian")
+    plt.grid(True, color="#5500FF")
+    plt.xlim(-0.1,1.1)
+    plt.title("Mipymes en las que se puede comprar una unidad de cada uno de los 10 productos con el salario basico (5849cup)",
+            fontname="algerian",
+            fontsize=15)
+    return (plt.show())

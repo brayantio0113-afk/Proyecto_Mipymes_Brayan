@@ -48,7 +48,7 @@ def cantidad_productos():
     return(cant_prod)
 
 #DICCIONARIO BOOLEANO QUE DICE CAUNTAS MIPYMES ALCANZA PARA COMPRAR UNA UNIDAD DE CADA PRODUCTO CON EL SALARIO PROMEDIO (5839)
-def alc_salario():
+def alc_salario_dic():
     mp=op("Mipymes")["mipymes"]
     total=0
     totales=[]
@@ -67,6 +67,25 @@ def alc_salario():
             salario["si"]+=1
         else: salario["no"]+=1
     return(salario)
+
+#LISTA BOOLENA (0=NO/1=SI) QUE DICE LAS MIPYMES EN LAS QUE ALCANZA PARA COMPRAR UNA UNIDAD DE CADA PRODUCTO CON EL SALARIO PROMEDIO (5839)
+def alc_salario_list():
+    mp=op("Mipymes")["mipymes"]
+    total=0
+    totales=[]
+    salario=[]
+    c=-1
+    for j in range(30):
+        total=0
+        c+=1
+        for i in (mp[c]["productos"]):
+            total+=(int(i["price"]))
+        totales.append(total)
+    for i in totales:
+        if i>5839:
+            salario.append(0)
+        else: salario.append(1)
+    return salario
 
 #DICCIONARIO CON LA CANTIDAD DE METODOS DE PAGO EN LAS MIPYMES
 def met_pago():
@@ -128,3 +147,13 @@ def id_eltoque():
     for i in (op("ElToque")["ElToque"]):
         id.append(i["ID"])
     return(id)
+
+#LISTA CON LOS NOMBRES DE LAS MIPYMES EN EL MISMO OREDEN DEL JSON
+def nombres_mp():
+    mp=op("Mipymes")
+    nombres=[]
+    c=0
+    for i in range(30):
+            nombres.append (mp["mipymes"][c]["nombre"])
+            c+=1
+    return nombres 
