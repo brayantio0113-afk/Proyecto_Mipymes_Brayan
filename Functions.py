@@ -1,6 +1,4 @@
-import Open_json
 from Open_json import op
-
 #EXTRAER UNA LISTA CON LOS PRECIOS DEL USD EN EL TOQUE
 def usd():
     u=[]

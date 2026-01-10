@@ -1,12 +1,11 @@
-import matplotlib
-from matplotlib import pyplot as plt
 import Functions
-
+import matplotlib.pyplot as plt
+from Open_json import op
 #GRAFICA DE PIE QUE MUESTRA LA CANTIDAD Y PORCENTAJE DE METODOS DE PAGO QUE ACEPTAN LAS MIPYMES
 def graf_pie_met_pago():
     cantidad=list(Functions.met_pago().values()) #ALMACENA LOS VALORES DEL DICC DE LOS METODOS DE PAGO
     cantidad.sort() #ORDENARLOS DE MAYOR A MENOR
-    plt.figure(figsize=(15,15), facecolor="#f7f4ef") #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE Y EL COLOR DE FONDO
+    plt.figure(figsize=(8,8), facecolor="#f7f4ef") #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE Y EL COLOR DE FONDO
     plt.pie(cantidad, #CREA LA GRAFICA DE PIE
             autopct="%1.0f%%", #AGREGA EL % QUE REPRESENTA CADA SECTOR
             colors=["#7a5195","#4f81bd", "#9bbb59", "#c0504d"], #PERSONALIZA LOS COLORES DE LOS SECTORES
@@ -18,7 +17,8 @@ def graf_pie_met_pago():
     plt.title("METODOS DE PAGO QUE ACEPTAN CADA UNA DE LAS MIPYMES", #CREA EL TITULO
               fontsize=25, #AUMENTA EL TAMAÑO
               fontname="algerian", #CAMBIA LA FUENTE
-              fontweight="bold") #CONVIERTE EN NEGRITA
+              fontweight="bold", #CONVIERTE EN NEGRITA
+              loc="right")
     plt.legend(["Euro: 2", "USD: 12","Cup: 30", "MLC: 30"], #CREA LA LEYENDA
                title="Tiendas que cumplen", #CREA EL TITULO DE LA LEYENDA
                fontsize=20, #AUMENTA EL TAMAÑO DE LOS VALORES DE LA LEYENDA
@@ -37,7 +37,7 @@ def graf_cant_prod():
     for i in range(len(productos)): #AÑADE LOS INDICES A LA LISTA
         productos_pos.append(i)
     productos_upp=[i.upper() for i in productos] #PONE LAS LLAVES EN MAYUSCULAS
-    plt.figure(figsize=(15,15), #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE
+    plt.figure(figsize=(15,10), #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE
                facecolor="#f2f2f2") #CAMBIA EL COLOR DEL FONDO
     plt.barh(productos_upp, cantidad, # CREA EL GRAFICOS DE BARRA HORIZONTAL
             height=0.8, #ESTABLECE EL ANCHO DE LAS BARRAS
@@ -63,7 +63,7 @@ def graf_pl_ElToque():
     price_euro=Functions.euro()
     price_mlc=Functions.mlc()
     fechas=Functions.id_eltoque()
-    plt.figure(figsize=(15,15),
+    plt.figure(figsize=(15,5),
             facecolor=("#f7f4ef"))
     plt.plot(fechas, price_euro,
             marker=".",
@@ -118,7 +118,7 @@ def graf_bar_comp_usd_ac():
 def graf_scatt_alc_sal():
     mipymes=Functions.nombres_mp()
     alcanza=Functions.alc_salario_list()
-    plt.figure(figsize=(15,15), facecolor="#f7f4ef")
+    plt.figure(figsize=(8,8), facecolor="#f7f4ef")
     plt.scatter(alcanza, mipymes, s=80, color="#910404", facecolor="#5500FF")
     plt.xticks([0, 1], ["No", "Sí"],
                 fontname="algerian",
