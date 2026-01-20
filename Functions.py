@@ -155,3 +155,5 @@ def nombres_mp():
             nombres.append (mp["mipymes"][c]["nombre"])
             c+=1
     return nombres 
+
+print (fechas_eltoque()[31:61])

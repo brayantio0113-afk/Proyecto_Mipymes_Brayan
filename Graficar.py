@@ -59,73 +59,77 @@ def graf_cant_prod():
 
 #GRÁFICA QUE MUESTRA LA COMPARATIVA DE LA VARIACION DE LOS PRECIOS DEL USD Y EURO EN EL TOQUE
 def graf_pl_ElToque():
-    price_usd=Functions.usd()
-    price_euro=Functions.euro()
-    price_mlc=Functions.mlc()
-    fechas=Functions.id_eltoque()
-    plt.figure(figsize=(15,5),
-            facecolor=("#f7f4ef"))
-    plt.plot(fechas, price_euro,
-            marker=".",
-            color="blue")
-    plt.plot(fechas, price_usd,
-            marker=".",
+    price_usd=Functions.usd() #ALMACENA LOS VALORES DEL USD
+    price_euro=Functions.euro() #ALMACENA LOS VALORES DEL EURO
+    price_mlc=Functions.mlc() #ALMACENA LOS VALORES DEL MLC
+    fechas=Functions.id_eltoque() #ALMACENA LOS ID DE LOS DIAS DE ANÁLISIS DE ELTOQUE
+    plt.figure(figsize=(15,5), #ESTABLECE EL TAMAÑO DE LA FIGURA
+            facecolor=("#f7f4ef")) # ESTABLECE EL COLOR DE FONDO
+    plt.plot(fechas, price_euro, #CREA UNA GRÁFICA DE LINEAS
+            marker=".", #CREA UN MARCADOR EN CADA VALOR DE LA GRÁFICA
+            color="blue") #CAMBIA EL COLOR DE LA LÍNEA
+    plt.plot(fechas, price_usd, #CREA OTRA LÍNEA EN LA MISMA GRÁFICA
+            marker=".", 
             color="green")
-    plt.xlim (0,62)
-    leyenda=plt.legend(["Euro", "USD"],
-                title="MONEDAS",
-                title_fontsize=15,
-                prop={"family":"algerian", 
-                    "size":15},)
-    plt.title("COMPARACIÓN DE LA VARIACIÓN DE LOS PRECIOS DEL USD Y EL EURO POR ELTOQUE",
+    plt.xlim (0,62) #ESTABLECE EL LÍMITE DEL EJE X
+    leyenda=plt.legend(["Euro", "USD"], #CREA UNA LEYENDA
+                title="MONEDAS", #CREA UN TÍTULO PARA LA LEYENDA
+                title_fontsize=15, #CAMBIA EL TAMAÑO DEL TITULO DE LA LEYENDA
+                prop={"family":"algerian", #CAMBIA LA FUENTE DEL TEXTO EN LA LEYENDA
+                    "size":15},) #CAMBIA EL TAMAÑO DEL TEXTO EN LA LEYENDA
+    plt.title("COMPARACIÓN DE LA VARIACIÓN DE LOS PRECIOS DEL USD Y EL EURO POR ELTOQUE", #ESTABLECE UN TÍTULO A LA GRÁFICA
+            fontname="algerian", #CAMBIA LA FUENTE DEL TEXTO DEL TÍTULO
+            fontsize=20) #CAMBIA EL TAMAÑO DEL TEXTO DEL TÍTULO
+    plt.setp(leyenda.get_title(), fontfamily='algerian', fontsize=16, fontweight='bold') #MODIFICA EL TEXTO EN EL TÍTULO DE LA LEYENDA
+    plt.ylim(400, 550) #ESTABLECE EL LÍMITE DEL EJE Y
+    plt.xticks(fechas, #CREA LOS VALORES DEL EJE X
+            fontsize=8) #CAMBIA EL TAMAÑO DEL TEXTO DE LOS VALORES DEL EJE X
+    plt.xlabel("DIAS DE ANÁLISIS", #CREA UN TÍTULO PARA EL EJE X
             fontname="algerian",
             fontsize=20)
-    plt.setp(leyenda.get_title(), fontfamily='algerian', fontsize=16, fontweight='bold')
-    plt.ylim(400, 550)
-    plt.xticks(fechas,
-            fontsize=8)
-    plt.xlabel("DIAS DE ANÁLISIS",
-            fontname="algerian",
-            fontsize=20)
-    plt.ylabel("PRECIOS EN CUP",
+    plt.ylabel("PRECIOS EN CUP", #CREA UN TÍTULO PARA EL EJE Y
             fontname="algerian",
             fontsize=20)
     for i, k in zip(price_euro,fechas ):
-            plt.vlines(x=k, ymin=i - 200, ymax=i - 1, color="red", linestyles="--", linewidth=0.5)
+            plt.vlines(x=k, ymin=i - 200, ymax=i - 1, color="red", linestyles="--", linewidth=0.5) #CREA LÍNNEAS QUE VAN DESDE EL PUNTO EN CADA VALOR HASTA EL EJE X
     return(plt.show())
 
 #GRAFICA DE BARRAS DOBLES QUE COMPARA LOS PRECIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE
 def graf_bar_comp_usd_ac():
-    usd_et_nov=Functions.prom_nov_et(Functions.usd())
-    usd_et_oct=Functions.prom_oct_et(Functions.usd())
-    ac_nov=Functions.prom_ac_grup_nov()
-    ac_oct=Functions.prom_ac_grup_oct()
-    plt.bar(0.9, ac_oct, width=0.30, color="blue", edgecolor="black")
-    plt.bar(0.6, ac_nov, width=0.30, color="red", edgecolor="black")
-    plt.bar(0.15, usd_et_oct, width=0.30, color="blue", edgecolor="black")
+    usd_et_nov=Functions.prom_nov_et(Functions.usd()) #ALMACENA EL PRECIO PROMEDIO DEL USD EN NOVIEMBRE
+    usd_et_oct=Functions.prom_oct_et(Functions.usd()) #ALMACENA EL PRECIO PROMEDIO DEL USD EN OCTUBRE
+    ac_nov=Functions.prom_ac_grup_nov() #ALMACENA EL PRECIO PROMEDIO DEL ACEITE EN NOVIEMBRE
+    ac_oct=Functions.prom_ac_grup_oct() #ALMACENA EL PRECIO PROMEDIO DEL ACEITE EN OCTUBRE
+    plt.bar(0.9, ac_oct, width=0.30, color="blue", edgecolor="black") #ESTAS 4 LÍNEAS CREAN 4 BARRAS EN 2 VALORES DEL EJE X, 2 EN CADA VALOR QUE SON LOS PROMEDIOS DEL ACEITE
+    plt.bar(0.6, ac_nov, width=0.30, color="red", edgecolor="black") #Y LOS PROMEDIOS DEL USD, LAS 2 BARRAS EN CADA VALOR SON LOS PROMEDIOS EN OCTUBRE Y EN NOVIEMBRE RESPECTIVAMENTE 
+    plt.bar(0.15, usd_et_oct, width=0.30, color="blue", edgecolor="black") #DEL ACEITE Y EL USD
     plt.bar(-0.15, usd_et_nov, width=0.30, color="red", edgecolor="black")
-    plt.legend(["NOVIEMBRE", "OCTUBRE"], fontsize=15)
-    plt.xticks([0,0.75], ["USD", "ACEITE"], fontname="algerian", fontsize=20)
-    plt.text(0.9, ac_oct, ac_oct, ha="center", va="bottom", fontweight="bold")
-    plt.text(0.6, ac_nov, ac_nov, ha="center", va="bottom", fontweight="bold")
+    plt.legend(["NOVIEMBRE", "OCTUBRE"], fontsize=15) 
+    plt.xticks([0,0.75], ["USD", "ACEITE"], fontname="algerian", fontsize=20) #ESTABLECE LOS VALORES DEL EJE X Y MODIFICA EL TEXTO
+    plt.text(0.9, ac_oct, ac_oct, ha="center", va="bottom", fontweight="bold") #ESTAS 4 LÍNEAS CREAN UN TEXTO ENCIMA DE CADA BARRA CON EL NÚMERO DEL PROMEDIO DE CADA UNA
+    plt.text(0.6, ac_nov, ac_nov, ha="center", va="bottom", fontweight="bold") #Y MODIFICA EL TIPO DE LETRA
     plt.text(0.15, usd_et_oct, usd_et_oct, ha="center", va="bottom", fontweight="bold")
     plt.text(-0.15, usd_et_nov, usd_et_nov, ha="center", va="bottom", fontweight="bold")
-    plt.yticks(fontname="algerian", fontsize=15)
+    plt.yticks(fontname="algerian", fontsize=15) #ESTABLECE LOS VALORES DEL EJE Y Y MODIFICA EL TEXTO
     plt.title("COMPARACIÓN DE LOS PROMEDIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE", fontname="algerian", fontsize=20)
     return (plt.show())
 
 #GRAFICA QUE MMUESTRA LAS MIPYMES EN LAS QUE SE PUEDE COMPRAR UNA UNIDAD DE CADA UNO DE LOS 10 PRODUCTOS ANALIZADOS CON EL SALARIO BASICO (5849cup)
 def graf_scatt_alc_sal():
-    mipymes=Functions.nombres_mp()
-    alcanza=Functions.alc_salario_list()
+    mipymes=Functions.nombres_mp() #ALMACENA LOS NOMBRES DE LAS MIPYMES
+    alcanza=Functions.alc_salario_list() #ALMACENA LA LISTA DE 0 Y 1 DE LAS MIPYMES QUE SE PUEDE COMPRAR CON EL SALARIO BÁSICO LOS 10 PRODUCTOS
     plt.figure(figsize=(8,8), facecolor="#f7f4ef")
-    plt.scatter(alcanza, mipymes, s=80, color="#910404", facecolor="#5500FF")
-    plt.xticks([0, 1], ["No", "Sí"],
+    plt.scatter(alcanza, mipymes, #CREA UNA GRÁFICA DE SCATTER
+                s=80, #CAMBIA EL TAMAÑO DE LOS INDICADORES (LOS PUNTOS)
+                color="#910404", #CAMBIA EL COLOR DEL BORDE DE LOS INDICADORES
+                facecolor="#5500FF") #CAMBIA EL COLOR DE LOS INDICADORES
+    plt.xticks([0, 1], ["No", "Sí"], #ESTABLECE LOS VALORES DEL EJE X
                 fontname="algerian",
                 fontsize=20)
-    plt.yticks(fontname="algerian")
-    plt.grid(True, color="#5500FF")
-    plt.xlim(-0.1,1.1)
+    plt.yticks(fontname="algerian") #ESTABLECE LOS VALORES DEL EJE Y
+    plt.grid(True, #CREA LÍNEAS GUÍAS PARA MEJOR VISUALIZACIÓN
+             color="#5500FF") #CAMBIA EL COLOR DE LAS LÍNEAS
+    plt.xlim(-0.1,1.1) #ESTABLECE EL LÍMITE DEL EJE X
     plt.title("Mipymes en las que se puede comprar una unidad de cada uno de los 10 productos con el salario basico (5849cup)",
             fontname="algerian",
             fontsize=15)
