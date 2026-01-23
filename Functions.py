@@ -123,7 +123,7 @@ def prom_nov_et(moneda):
 def prom_ac_grup_oct():
     c=-1
     promedio=0
-    gr=op("Grupos")["Grupos_Revolico_aceite_1lt"]["Precios"][0]["Octubre"]
+    gr=op("Grupos")["Grupos_Revolico"][0]["Aceite"][0]["Octubre"]
     for i in range(30):
         c+=1
         promedio+=(gr[c]["CUP"])
@@ -133,7 +133,7 @@ def prom_ac_grup_oct():
 def prom_ac_grup_nov():
     c=-1
     promedio=0
-    gr=op("Grupos")["Grupos_Revolico_aceite_1lt"]["Precios"][1]["Noviembre"]
+    gr=op("Grupos")["Grupos_Revolico"][0]["Aceite"][1]["Noviembre"]
     for i in range(30):
         c+=1
         promedio+=(gr[c]["CUP"])
@@ -156,4 +156,78 @@ def nombres_mp():
             c+=1
     return nombres 
 
-print (fechas_eltoque()[31:61])
+#DICCIONARIO CON LOS METODOS DE PAGO ACEPTADOS EN CADA MIPYME
+def met_pago_dicc():
+    mp=op("Mipymes")
+    resultado = {}
+
+    for i in mp["mipymes"]:
+        nombre = i["nombre"]
+        pagos = i["moneda y metodos de pago"]
+
+        monedas = []
+        for moneda, metodo in pagos.items():
+            if metodo != "None":
+                monedas.append(moneda)
+
+        resultado[nombre] = monedas
+
+    return resultado
+
+#DICCIONARIO QUE MUESTRA LOS NOMBRES DE LAS MIPTMES Y LA SUMA DE SUS PRODUCTOS
+def alc_salario_nombres_dicc():
+    mp=op("Mipymes")["mipymes"]
+    nombres=nombres_mp()
+    nombres
+    total=0
+    totales=[]
+    salario={}
+    c=-1
+    for j in range(30):
+        total=0
+        c+=1
+        for i in (mp[c]["productos"]):
+            total+=(int(i["price"]))
+        totales.append(total)
+    salario=dict(zip(nombres, totales))
+    return salario
+
+#PROMERIO DEL PRECIO DEL ARROZ EN OCTUBRE
+def prom_arr_grup_nov():
+    c=-1
+    promedio=0
+    gr=op("Grupos")["Grupos_Revolico"][0]["Arroz"][0]["Noviembre"]
+    for i in range(30):
+        c+=1
+        promedio+=(gr[c]["CUP"])
+    return(promedio//30)
+
+#PROMERIO DEL PRECIO DEL ARROZ EN NOVIEMBRE
+def prom_arr_grup_oct():
+    c=-1
+    promedio=0
+    gr=op("Grupos")["Grupos_Revolico"][0]["Arroz"][0]["Octubre"]
+    for i in range(30):
+        c+=1
+        promedio+=(gr[c]["CUP"])
+    return(promedio//30)
+
+#PROMERIO DEL PRECIO DEL FRIJOL EN OCTUBRE
+def prom_frij_grup_nov():
+    c=-1
+    promedio=0
+    gr=op("Grupos")["Grupos_Revolico"][0]["Frijoles"][0]["Noviembre"]
+    for i in range(30):
+        c+=1
+        promedio+=(gr[c]["CUP"])
+    return(promedio//30)
+
+#PROMERIO DEL PRECIO DEL FRIJOL EN NOVIEMBRE
+def prom_frij_grup_oct():
+    c=-1
+    promedio=0
+    gr=op("Grupos")["Grupos_Revolico"][0]["Frijoles"][0]["Octubre"]
+    for i in range(30):
+        c+=1
+        promedio+=(gr[c]["CUP"])
+    return(promedio//30)

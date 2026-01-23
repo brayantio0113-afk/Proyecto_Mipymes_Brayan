@@ -1,32 +1,6 @@
 import Functions
 import matplotlib.pyplot as plt
 from Open_json import op
-#GRAFICA DE PIE QUE MUESTRA LA CANTIDAD Y PORCENTAJE DE METODOS DE PAGO QUE ACEPTAN LAS MIPYMES
-def graf_pie_met_pago():
-    cantidad=list(Functions.met_pago().values()) #ALMACENA LOS VALORES DEL DICC DE LOS METODOS DE PAGO
-    cantidad.sort() #ORDENARLOS DE MAYOR A MENOR
-    plt.figure(figsize=(8,8), facecolor="#f7f4ef") #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE Y EL COLOR DE FONDO
-    plt.pie(cantidad, #CREA LA GRAFICA DE PIE
-            autopct="%1.0f%%", #AGREGA EL % QUE REPRESENTA CADA SECTOR
-            colors=["#7a5195","#4f81bd", "#9bbb59", "#c0504d"], #PERSONALIZA LOS COLORES DE LOS SECTORES
-            textprops={"fontsize":20, #AUMENTA EL TAMAÑO DEL TEXTO EN LOS SECTORES
-                       "fontname":"algerian", #CAMBIA LA FUENTE DEL TEXTO EN LOS SECTORES
-                       "color":"white", #CAMBIA EL COLOR DEL TEXTO EN LOS SECTORES
-                       })
-    
-    plt.title("METODOS DE PAGO QUE ACEPTAN CADA UNA DE LAS MIPYMES", #CREA EL TITULO
-              fontsize=25, #AUMENTA EL TAMAÑO
-              fontname="algerian", #CAMBIA LA FUENTE
-              fontweight="bold", #CONVIERTE EN NEGRITA
-              loc="right")
-    plt.legend(["Euro: 2", "USD: 12","Cup: 30", "MLC: 30"], #CREA LA LEYENDA
-               title="Tiendas que cumplen", #CREA EL TITULO DE LA LEYENDA
-               fontsize=20, #AUMENTA EL TAMAÑO DE LOS VALORES DE LA LEYENDA
-               title_fontsize=25, #AUMENTA EL TAMAÑO DEL TITULO DE LA LEYENDA
-               bbox_to_anchor=(0.02, 0), #CAMBIA LA POSICION DEL CUADRO DE LEYENDA
-               loc="lower right") #INDICA LA POSICION
-    return (plt.show())
-
 #GRAFICA DE BARRAS HORIZONRAL QUE MUESRA LA FRECUENCIA CON QUE SE ENCUENTRA CADA PRODUCTO EN LAS MIPYMES
 def graf_cant_prod():
     cant_prod=Functions.cantidad_productos() #ALMACENA EL DICC DE LA CANTIDAD DE PRODUCTOS
@@ -100,37 +74,122 @@ def graf_bar_comp_usd_ac():
     usd_et_oct=Functions.prom_oct_et(Functions.usd()) #ALMACENA EL PRECIO PROMEDIO DEL USD EN OCTUBRE
     ac_nov=Functions.prom_ac_grup_nov() #ALMACENA EL PRECIO PROMEDIO DEL ACEITE EN NOVIEMBRE
     ac_oct=Functions.prom_ac_grup_oct() #ALMACENA EL PRECIO PROMEDIO DEL ACEITE EN OCTUBRE
+    arr_nov=Functions.prom_arr_grup_nov()
+    arr_oct=Functions.prom_arr_grup_oct()
+    frij_nov=Functions.prom_frij_grup_nov()
+    frij_oct=Functions.prom_frij_grup_oct()
+    plt.figure(figsize=(8,8),
+               facecolor="#f7f4ef")
     plt.bar(0.9, ac_oct, width=0.30, color="blue", edgecolor="black") #ESTAS 4 LÍNEAS CREAN 4 BARRAS EN 2 VALORES DEL EJE X, 2 EN CADA VALOR QUE SON LOS PROMEDIOS DEL ACEITE
     plt.bar(0.6, ac_nov, width=0.30, color="red", edgecolor="black") #Y LOS PROMEDIOS DEL USD, LAS 2 BARRAS EN CADA VALOR SON LOS PROMEDIOS EN OCTUBRE Y EN NOVIEMBRE RESPECTIVAMENTE 
     plt.bar(0.15, usd_et_oct, width=0.30, color="blue", edgecolor="black") #DEL ACEITE Y EL USD
     plt.bar(-0.15, usd_et_nov, width=0.30, color="red", edgecolor="black")
+    plt.bar(1.65, arr_nov, width=0.30, color="blue", edgecolor="black")
+    plt.bar(1.35, arr_oct, width=0.30, color="red", edgecolor="black")
+    plt.bar(2.10, frij_nov, width=0.30, color="red", edgecolor="black")
+    plt.bar(2.40, frij_oct, width=0.30, color="blue", edgecolor="black")
     plt.legend(["NOVIEMBRE", "OCTUBRE"], fontsize=15) 
-    plt.xticks([0,0.75], ["USD", "ACEITE"], fontname="algerian", fontsize=20) #ESTABLECE LOS VALORES DEL EJE X Y MODIFICA EL TEXTO
+    plt.xticks([0,0.75, 1.5, 2.25], ["USD", "ACEITE", "ARROZ", "FRIJOLES"], fontname="algerian", fontsize=20) #ESTABLECE LOS VALORES DEL EJE X Y MODIFICA EL TEXTO
     plt.text(0.9, ac_oct, ac_oct, ha="center", va="bottom", fontweight="bold") #ESTAS 4 LÍNEAS CREAN UN TEXTO ENCIMA DE CADA BARRA CON EL NÚMERO DEL PROMEDIO DE CADA UNA
     plt.text(0.6, ac_nov, ac_nov, ha="center", va="bottom", fontweight="bold") #Y MODIFICA EL TIPO DE LETRA
     plt.text(0.15, usd_et_oct, usd_et_oct, ha="center", va="bottom", fontweight="bold")
     plt.text(-0.15, usd_et_nov, usd_et_nov, ha="center", va="bottom", fontweight="bold")
+    plt.text(1.35, arr_oct, arr_oct, ha="center", va="bottom", fontweight="bold")
+    plt.text(1.65, arr_nov, arr_nov, ha="center", va="bottom", fontweight="bold")
+    plt.text(2.10, frij_nov, frij_nov, ha="center", va="bottom", fontweight="bold")
+    plt.text(2.40, frij_oct, frij_oct, ha="center", va="bottom", fontweight="bold")
     plt.yticks(fontname="algerian", fontsize=15) #ESTABLECE LOS VALORES DEL EJE Y Y MODIFICA EL TEXTO
     plt.title("COMPARACIÓN DE LOS PROMEDIOS DEL USD Y EL ACEITE EN LOS MESES DE OCTUBRE Y NOVIEMBRE", fontname="algerian", fontsize=20)
     return (plt.show())
 
-#GRAFICA QUE MMUESTRA LAS MIPYMES EN LAS QUE SE PUEDE COMPRAR UNA UNIDAD DE CADA UNO DE LOS 10 PRODUCTOS ANALIZADOS CON EL SALARIO BASICO (5849cup)
-def graf_scatt_alc_sal():
-    mipymes=Functions.nombres_mp() #ALMACENA LOS NOMBRES DE LAS MIPYMES
-    alcanza=Functions.alc_salario_list() #ALMACENA LA LISTA DE 0 Y 1 DE LAS MIPYMES QUE SE PUEDE COMPRAR CON EL SALARIO BÁSICO LOS 10 PRODUCTOS
-    plt.figure(figsize=(8,8), facecolor="#f7f4ef")
-    plt.scatter(alcanza, mipymes, #CREA UNA GRÁFICA DE SCATTER
-                s=80, #CAMBIA EL TAMAÑO DE LOS INDICADORES (LOS PUNTOS)
-                color="#910404", #CAMBIA EL COLOR DEL BORDE DE LOS INDICADORES
-                facecolor="#5500FF") #CAMBIA EL COLOR DE LOS INDICADORES
-    plt.xticks([0, 1], ["No", "Sí"], #ESTABLECE LOS VALORES DEL EJE X
-                fontname="algerian",
-                fontsize=20)
-    plt.yticks(fontname="algerian") #ESTABLECE LOS VALORES DEL EJE Y
-    plt.grid(True, #CREA LÍNEAS GUÍAS PARA MEJOR VISUALIZACIÓN
-             color="#5500FF") #CAMBIA EL COLOR DE LAS LÍNEAS
-    plt.xlim(-0.1,1.1) #ESTABLECE EL LÍMITE DEL EJE X
-    plt.title("Mipymes en las que se puede comprar una unidad de cada uno de los 10 productos con el salario basico (5849cup)",
-            fontname="algerian",
-            fontsize=15)
+#GRAFICA DE PIE QUE MUESTRA EN CUANTAS MIPYMES ALCANZA PARA COMPRAR LOS PRODUCTOS
+def graf_pie_alc_salario():
+    alcanza=list(Functions.alc_salario_dic().values()) #ALMACENA LOS VALORES DEL DICC DEL SALARIO
+    lista_mipymes=[]
+    sumas=list(Functions.alc_salario_nombres_dicc().values())
+    c=0
+    for i in list(Functions.alc_salario_nombres_dicc().keys()):
+        precio=sumas[c]
+        lista_mipymes.append(f"{i}: {precio}")
+        c+=1
+    nombres = "\n".join(lista_mipymes)
+    plt.figure(figsize=(8,8), facecolor="#f7f4ef") #ESTABLECE EL TAMAÑO DE LA VENTANA AL EJECUTARSE Y EL COLOR DE FONDO
+    plt.pie(alcanza, #CREA LA GRAFICA DE PIE
+            autopct="%1.0f%%", #AGREGA EL % QUE REPRESENTA CADA SECTOR
+            colors=["#4f81bd","#bb0600"], #PERSONALIZA LOS COLORES DE LOS SECTORES
+            textprops={"fontsize":30, #AUMENTA EL TAMAÑO DEL TEXTO EN LOS SECTORES
+                       "fontname":"algerian", #CAMBIA LA FUENTE DEL TEXTO EN LOS SECTORES
+                       "color":"white", #CAMBIA EL COLOR DEL TEXTO EN LOS SECTORES
+                       })
+    
+    plt.title("Mipymes en las que se puede comprar una unidad de cada uno de los 10 productos con el salario basico (5849cup)", #CREA EL TITULO
+              fontsize=18, #AUMENTA EL TAMAÑO
+              fontname="algerian", #CAMBIA LA FUENTE
+              fontweight="bold", #CONVIERTE EN NEGRITA
+              loc="center")
+    plt.legend(Functions.alc_salario_dic().items(), #CREA LA LEYENDA
+               title="Tiendas que cumplen", #CREA EL TITULO DE LA LEYENDA
+               fontsize=25, #AUMENTA EL TAMAÑO DE LOS VALORES DE LA LEYENDA
+               title_fontsize=25, #AUMENTA EL TAMAÑO DEL TITULO DE LA LEYENDA
+               bbox_to_anchor=(0.02, 0), #CAMBIA LA POSICION DEL CUADRO DE LEYENDA
+               loc="lower right") #INDICA LA POSICION
+    plt.text(
+    1.05, 0.5,
+    nombres,
+    transform=plt.gca().transAxes,
+    fontsize=12,
+    fontname="algerian",
+    va="center"
+)
+
     return (plt.show())
+#GRAFICA DE SCATTER QUE MUESTRA LOSMETODOS DE PAGO ACEPTADOS POR MIPYME
+def graf_scatter_metodos_pago():
+    dicc=Functions.met_pago_dicc()
+    monedas = ["CUP", "USD", "MLC", "Euro"]
+    mipymes = list(dicc.keys())
+
+    # Mapear categorías a números
+    x_map = {moneda: i for i, moneda in enumerate(monedas)}
+    y_map = {mipyme: i for i, mipyme in enumerate(mipymes)}
+
+    x_vals = []
+    y_vals = []
+
+    for mipyme, monedas_aceptadas in dicc.items():
+        for moneda in monedas_aceptadas:
+            if moneda in x_map:
+                x_vals.append(x_map[moneda])
+                y_vals.append(y_map[mipyme])
+
+    plt.figure(figsize=(10,8),
+               facecolor="#f7f4ef")
+    plt.scatter(x_vals, y_vals,
+                s=100,
+                color="#910404",
+                facecolor="#5500FF")
+    plt.xticks(
+        ticks=range(len(monedas)),
+        labels=monedas,
+        fontname="algerian",
+        fontsize=15
+    )
+    plt.yticks(
+        ticks=range(len(mipymes)),
+        labels=mipymes,
+        fontname="algerian"
+    )
+    plt.xlabel("Monedas aceptadas",
+               fontname="algerian",
+               fontsize=25,)
+    plt.ylabel("Mipymes",
+               fontname="algerian",
+               fontsize=25)
+    plt.title("Métodos de pago aceptados por mipyme", 
+              fontname="algerian",
+              fontsize=25)
+    plt.xlim(-1,4)
+
+    plt.grid(True, color="#5500FF")
+    plt.tight_layout()
+    return plt.show()
